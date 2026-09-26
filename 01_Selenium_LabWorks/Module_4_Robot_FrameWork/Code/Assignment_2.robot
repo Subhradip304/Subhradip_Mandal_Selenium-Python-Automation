@@ -10,7 +10,7 @@ Handle Web Elements
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
 
-    Input Text    id=name    Harsh
+    Input Text    id=name    Subhradip
 
     Select Radio Button    radioButton    radio2
 
