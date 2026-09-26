@@ -1,24 +1,24 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
 
 *** Variables ***
 ${URL}        https://rahulshettyacademy.com/AutomationPractice/
-${BROWSER}    Chrome
+${BROWSER}    Edge
 
 *** Test Cases ***
 Practice Locators And XPath
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser                 ${URL}                            ${BROWSER}
     Maximize Browser Window
 
-    Input Text    id=name    Subhradip
+    Input Text                   id=name                           subhradip
 
-    Select Radio Button    radioButton    radio1
+    Select Radio Button          radioButton                       radio1
 
-    Select From List By Value    id=dropdown-class-example    option3
+    Select From List By Value    id=dropdown-class-example         option3
 
-    Select Checkbox    xpath=//input[@value='option2']
+    Select Checkbox              xpath=//input[@value='option2']
 
-    Click Element    xpath=//input[@value='radio3']
+    Click Element                xpath=//input[@value='radio3']
 
     Element Should Be Visible    xpath=//input[@id='name']
 
