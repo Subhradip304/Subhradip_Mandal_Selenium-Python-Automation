@@ -3,17 +3,28 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+# Initialize Microsoft Edge Driver
+driver = webdriver.Edge()
 driver.maximize_window()
 
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 
 wait = WebDriverWait(driver, 10)
 
+# Optional: enter your name in the input field to brand the execution session
+try:
+    name_box = wait.until(
+        EC.visibility_of_element_located((By.ID, "name"))
+    )
+    name_box.send_keys("Subhradip")
+    print("Tester Name entered: Subhradip")
+except Exception:
+    pass
+
 # 1. WAIT FOR WEBTABLE
 table = wait.until(
     EC.visibility_of_element_located(
-        (By.XPATH, "//table")
+        (By.XPATH, "//table[@name='courses']")
     )
 )
 
@@ -28,7 +39,7 @@ rows = table.find_elements(
 print("2. Number of rows:", len(rows))
 
 # 3. EXTRACT TABLE DATA
-print("\nWebTable Data:")
+print("\nWebTable Data (Extracted by Subhradip):")
 
 for row_number, row in enumerate(rows, start=1):
 
@@ -85,7 +96,6 @@ for row in rows:
             print(
                 f"5. '{search_value}' found in table"
             )
-
             break
 
     if found:
@@ -96,6 +106,6 @@ if not found:
         f"5. '{search_value}' was not found in the table"
     )
 
-print("\nAssignment 5 - HTML WebTable Extractor PASSED")
+print("\nAssignment 5 - HTML WebTable Extractor PASSED by Subhradip")
 
 driver.quit()
