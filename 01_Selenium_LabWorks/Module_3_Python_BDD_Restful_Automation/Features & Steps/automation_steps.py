@@ -7,7 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 @given("the browser is opened")
 def step_open_browser(context):
-    context.driver = webdriver.Chrome()
+    # Initialize Microsoft Edge Driver
+    context.driver = webdriver.Edge()
     context.driver.maximize_window()
     context.wait = WebDriverWait(context.driver, 10)
 
@@ -22,7 +23,7 @@ def step_open_page(context):
 @then("the page title should be displayed")
 def step_verify_page_title(context):
     assert context.driver.title.strip() != ""
-    print("Page title:", context.driver.title)
+    print("Page title verified:", context.driver.title)
 
 
 @when('the user enters name "{name}"')
@@ -34,14 +35,15 @@ def step_enter_name(context, name):
     name_box.send_keys(name)
 
     assert name_box.get_attribute("value") == name
-    print("Name entered:", name)
+    print(f"Name entered successfully: {name}")
 
 
 @then("the name should be entered successfully")
 def step_verify_name(context):
     name_box = context.driver.find_element(By.ID, "name")
-    assert name_box.get_attribute("value").strip() != ""
-    print("Name verified:", name_box.get_attribute("value"))
+    assert name_box.get_attribute("value") == "Subhradip"
+    print(f"Name verified as Subhradip: {name_box.get_attribute('value')}")
+
 
 @when("the user selects Radio2")
 def step_select_radio2(context):
@@ -59,7 +61,7 @@ def step_verify_radio2(context):
         By.XPATH, "//input[@value='radio2']"
     )
     assert radio2.is_selected()
-    print("Radio2 selected")
+    print("Radio2 selected successfully by Subhradip")
 
 
 @when("the user clicks the Alert button")
@@ -77,8 +79,9 @@ def step_verify_alert(context):
     )
 
     assert alert is not None
+    assert "Subhradip" in alert.text
 
-    print("Alert text:", alert.text)
+    print("Alert text verified for Subhradip:", alert.text)
 
     alert.accept()
 
