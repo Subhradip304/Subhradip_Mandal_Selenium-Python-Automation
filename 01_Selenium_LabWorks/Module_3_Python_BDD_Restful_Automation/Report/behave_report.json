@@ -1,0 +1,285 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Selenium Automation Practice",
+    "tags": [],
+    "location": "Lab_Work/Features/automation.feature:1",
+    "status": "passed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verify page title",
+        "tags": [],
+        "location": "Lab_Work/Features/automation.feature:3",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "the browser is opened",
+            "location": "Lab_Work/Features/automation.feature:4",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:8",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2.526646375656128
+            }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "the user navigates to the Automation Practice page",
+            "location": "Lab_Work/Features/automation.feature:5",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:15",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26.848055839538574
+            }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "the page title should be displayed",
+            "location": "Lab_Work/Features/automation.feature:6",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:22",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.1228325366973877
+            }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Enter name",
+        "tags": [],
+        "location": "Lab_Work/Features/automation.feature:8",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "the browser is opened",
+            "location": "Lab_Work/Features/automation.feature:9",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:8",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1.350334882736206
+            }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "the user navigates to the Automation Practice page",
+            "location": "Lab_Work/Features/automation.feature:10",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:15",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31.014484882354736
+            }
+          },
+          {
+            "keyword": "And",
+            "step_type": "when",
+            "name": "the user enters name \"Subhradip\"",
+            "location": "Lab_Work/Features/automation.feature:11",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:28",
+              "arguments": [
+                {
+                  "value": "Subhradip",
+                  "name": "name"
+                }
+              ]
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.29516172409057617
+            }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "the name should be entered successfully",
+            "location": "Lab_Work/Features/automation.feature:12",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:40",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.0290071964263916
+            }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Select radio button",
+        "tags": [],
+        "location": "Lab_Work/Features/automation.feature:14",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "the browser is opened",
+            "location": "Lab_Work/Features/automation.feature:15",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:8",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1.407555103302002
+            }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "the user navigates to the Automation Practice page",
+            "location": "Lab_Work/Features/automation.feature:16",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:15",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32.98221278190613
+            }
+          },
+          {
+            "keyword": "And",
+            "step_type": "when",
+            "name": "the user selects Radio2",
+            "location": "Lab_Work/Features/automation.feature:17",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:46",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.2940521240234375
+            }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "Radio2 should be selected",
+            "location": "Lab_Work/Features/automation.feature:18",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:56",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.04410982131958008
+            }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Handle alert",
+        "tags": [],
+        "location": "Lab_Work/Features/automation.feature:20",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "the browser is opened",
+            "location": "Lab_Work/Features/automation.feature:21",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:8",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5.651659727656098
+            }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "the user navigates to the Automation Practice page",
+            "location": "Lab_Work/Features/automation.feature:22",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:15",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25.909058570861816
+            }
+          },
+          {
+            "keyword": "And",
+            "step_type": "when",
+            "name": "the user enters name \"Subhradip\"",
+            "location": "Lab_Work/Features/automation.feature:23",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:28",
+              "arguments": [
+                {
+                  "value": "Subhradip",
+                  "name": "name"
+                }
+              ]
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.36927272409057617
+            }
+          },
+          {
+            "keyword": "And",
+            "step_type": "when",
+            "name": "the user clicks the Alert button",
+            "location": "Lab_Work/Features/automation.feature:24",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:65",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.10778570175170898
+            }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "the alert should be displayed",
+            "location": "Lab_Work/Features/automation.feature:25",
+            "match": {
+              "location": "Lab_Work/Features/steps/automation_steps.py:73",
+              "arguments": []
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0.008650541305541992
+            }
+          }
+        ],
+        "status": "passed"
+      }
+    ]
+  }
+]
