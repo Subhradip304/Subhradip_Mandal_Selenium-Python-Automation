@@ -5,7 +5,8 @@ from selenium.webdriver.common.by import By
 
 @pytest.fixture
 def driver():
-    driver = webdriver.Chrome()
+    # Initialize Microsoft Edge Driver
+    driver = webdriver.Edge()
     driver.maximize_window()
     driver.get("https://rahulshettyacademy.com/AutomationPractice/")
     yield driver
@@ -15,11 +16,12 @@ def driver():
 @pytest.mark.smoke
 def test_name_field(driver):
     name_box = driver.find_element(By.ID, "name")
-    name_box.send_keys("Harsh")
+    name_box.clear()
+    name_box.send_keys("Subhradip")
 
-    assert name_box.get_attribute("value") == "Harsh"
+    assert name_box.get_attribute("value") == "Subhradip"
 
-    print("Name field test passed")
+    print("Name field test passed for Subhradip")
 
 
 @pytest.mark.smoke
@@ -40,4 +42,4 @@ def test_radio_button(driver):
 def test_page_title(driver):
     assert driver.title.strip() != ""
 
-    print("Page title test passed")
+    print(f"Page title test passed: '{driver.title}'")
