@@ -3,12 +3,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+# Initialize Microsoft Edge Driver
+driver = webdriver.Edge()
 driver.maximize_window()
 
 wait = WebDriverWait(driver, 10)
 
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+
+# Brand session with tester name
+try:
+    name_box = wait.until(
+        EC.visibility_of_element_located((By.ID, "name"))
+    )
+    name_box.send_keys("Subhradip")
+    print("Tester Name entered: Subhradip")
+except Exception:
+    pass
 
 # 1. STORE MAIN WINDOW
 main_window = driver.current_window_handle
@@ -91,7 +102,7 @@ iframe_body = wait.until(
 )
 
 print("Iframe content loaded")
-print("Iframe text:", iframe_body.text[:100])
+print("Iframe text preview:", iframe_body.text[:100])
 
 # 12. SWITCH BACK TO MAIN PAGE
 driver.switch_to.default_content()
@@ -101,6 +112,6 @@ print("11. Switched back to main page")
 # 13. FINAL VERIFICATION
 assert driver.current_window_handle == main_window
 
-print("\nAssignment 6 - Windows, Tabs & Iframes PASSED")
+print("\nAssignment 6 - Windows, Tabs & Iframes PASSED by Subhradip")
 
 driver.quit()
