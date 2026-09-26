@@ -1,5 +1,16 @@
+import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+
+@pytest.fixture
+def driver():
+    # Initialize Microsoft Edge Driver
+    driver = webdriver.Edge()
+    driver.maximize_window()
+    driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+    yield driver
+    driver.quit()
 
 
 def test_enter_name(driver):
@@ -8,11 +19,12 @@ def test_enter_name(driver):
         "name"
     )
 
-    name_box.send_keys("Harsh")
+    name_box.clear()
+    name_box.send_keys("Subhradip")
 
-    assert name_box.get_attribute("value") == "Harsh"
+    assert name_box.get_attribute("value") == "Subhradip"
 
-    print("Name entered successfully")
+    print("Name entered successfully as Subhradip")
 
 
 def test_radio_button(driver):
