@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.7 on win32)" generated="2026-09-26T22:55:48.953375" rpa="false" schemaversion="5">
+<suite id="s1" name="Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6">
+<suite id="s1-s1" name="Ass1" source="D:\Selenium_Lab_Works\ass1.robot">
+<test id="s1-s1-t1" name="Verify Automation Practice Page" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:55:49.240314" level="INFO">Opening browser 'Edge' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg time="2026-09-26T22:55:49.538175" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T22:55:49.240055" elapsed="2.027230"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T22:55:51.267909" elapsed="2.312474"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:55:53.596101" level="INFO">Page title is 'Practice Page'.</msg>
+<arg>Practice Page</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-09-26T22:55:53.580848" elapsed="0.015411"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-26T22:55:53.601767" elapsed="2.516755"/>
+</kw>
+<status status="PASS" start="2026-09-26T22:55:49.238933" elapsed="6.880380"/>
+</test>
+<status status="PASS" start="2026-09-26T22:55:49.001423" elapsed="7.122476"/>
+</suite>
+<suite id="s1-s2" name="Ass2" source="D:\Selenium_Lab_Works\ass2.robot">
+<test id="s1-s2-t1" name="Handle Web Elements" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:55:56.132683" level="INFO">Opening browser 'Edge' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg time="2026-09-26T22:55:56.466310" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T22:55:56.131982" elapsed="3.964255"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T22:56:00.096631" elapsed="0.129105"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:00.227029" level="INFO">Typing text 'subhradip' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>subhradip</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:00.226218" elapsed="0.117440"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:00.344384" level="INFO">Selecting 'radio2' from radio button 'radioButton'.</msg>
+<arg>radioButton</arg>
+<arg>radio2</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-09-26T22:56:00.344150" elapsed="0.086470"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:00.433178" level="INFO">Selecting options from selection list 'id=dropdown-class-example' by value option2.</msg>
+<arg>id=dropdown-class-example</arg>
+<arg>option2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-09-26T22:56:00.432486" elapsed="0.106607"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:00.540153" level="INFO">Selecting checkbox 'id=checkBoxOption1'.</msg>
+<arg>id=checkBoxOption1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:00.539785" elapsed="0.093301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-26T22:56:02.636969" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-26T22:56:00.635602" elapsed="2.001635"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-26T22:56:02.637841" elapsed="2.111588"/>
+</kw>
+<status status="PASS" start="2026-09-26T22:55:56.129918" elapsed="8.620296"/>
+</test>
+<status status="PASS" start="2026-09-26T22:55:56.125932" elapsed="8.625972"/>
+</suite>
+<suite id="s1-s3" name="Ass3" source="D:\Selenium_Lab_Works\ass3.robot">
+<test id="s1-s3-t1" name="Practice Locators And XPath" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:04.762106" level="INFO">Opening browser 'Edge' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg time="2026-09-26T22:56:05.150476" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T22:56:04.761937" elapsed="4.075155"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T22:56:08.837744" elapsed="0.132062"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:08.970599" level="INFO">Typing text 'subhradip' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>subhradip</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:08.970256" elapsed="0.120855"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:09.091844" level="INFO">Selecting 'radio1' from radio button 'radioButton'.</msg>
+<arg>radioButton</arg>
+<arg>radio1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-09-26T22:56:09.091604" elapsed="0.080869"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:09.174050" level="INFO">Selecting options from selection list 'id=dropdown-class-example' by value option3.</msg>
+<arg>id=dropdown-class-example</arg>
+<arg>option3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-09-26T22:56:09.173732" elapsed="0.080445"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:09.254669" level="INFO">Selecting checkbox 'xpath=//input[@value='option2']'.</msg>
+<arg>xpath=//input[@value='option2']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:09.254457" elapsed="0.140022"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:09.395339" level="INFO">Clicking element 'xpath=//input[@value='radio3']'.</msg>
+<arg>xpath=//input[@value='radio3']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:09.394989" elapsed="0.096110"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:09.512284" level="INFO">Element 'xpath=//input[@id='name']' is displayed.</msg>
+<arg>xpath=//input[@id='name']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T22:56:09.491518" elapsed="0.020910"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>xpath=//input[@id='name']</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-09-26T22:56:09.512877" elapsed="0.027131"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-26T22:56:09.540598" elapsed="2.199173"/>
+</kw>
+<status status="PASS" start="2026-09-26T22:56:04.760928" elapsed="6.979435"/>
+</test>
+<status status="PASS" start="2026-09-26T22:56:04.754361" elapsed="6.987228"/>
+</suite>
+<suite id="s1-s4" name="Ass4" source="D:\Selenium_Lab_Works\ass4.robot">
+<test id="s1-s4-t1" name="Practice Waits And Synchronization" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:11.748491" level="INFO">Opening browser 'Edge' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg time="2026-09-26T22:56:12.156632" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T22:56:11.747883" elapsed="3.822312"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T22:56:15.570601" elapsed="0.128589"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Practice Page</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-26T22:56:15.700059" elapsed="0.011619"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=name</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T22:56:15.712466" elapsed="0.031943"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:15.745373" level="INFO">Typing text 'subhradip' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>subhradip</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:15.745024" elapsed="0.114423"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>id=name</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-09-26T22:56:15.860585" elapsed="0.033597"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@value='radio2']</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T22:56:15.894595" elapsed="0.024984"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:15.921081" level="INFO">Clicking element 'xpath=//input[@value='radio2']'.</msg>
+<arg>xpath=//input[@value='radio2']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:15.920736" elapsed="0.083326"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=dropdown-class-example</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T22:56:16.004667" elapsed="0.017276"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:16.023346" level="INFO">Selecting options from selection list 'id=dropdown-class-example' by value option2.</msg>
+<arg>id=dropdown-class-example</arg>
+<arg>option2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-09-26T22:56:16.022907" elapsed="0.200211"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=checkBoxOption1</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T22:56:16.223724" elapsed="0.033027"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:16.259876" level="INFO">Selecting checkbox 'id=checkBoxOption1'.</msg>
+<arg>id=checkBoxOption1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:16.259198" elapsed="0.108417"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-09-26T22:56:18.369301" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-09-26T22:56:16.368099" elapsed="2.001439"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-26T22:56:18.373314" elapsed="2.312398"/>
+</kw>
+<status status="PASS" start="2026-09-26T22:56:11.746888" elapsed="8.939538"/>
+</test>
+<status status="PASS" start="2026-09-26T22:56:11.742668" elapsed="8.945373"/>
+</suite>
+<suite id="s1-s5" name="Ass5" source="D:\Selenium_Lab_Works\ass5.robot">
+<test id="s1-s5-t1" name="Handle Alert And Take Screenshot" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:20.698798" level="INFO">Opening browser 'Edge' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg time="2026-09-26T22:56:21.044708" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T22:56:20.698349" elapsed="3.940155"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T22:56:24.638863" elapsed="0.136538"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:24.776191" level="INFO">Typing text 'subhradip' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>subhradip</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:24.775825" elapsed="0.110648"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:24.887778" level="INFO">Clicking element 'id=alertbtn'.</msg>
+<arg>id=alertbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:24.887478" elapsed="0.094938"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:24.982996" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2026-09-26T22:56:24.982793" elapsed="0.029557"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:25.133048" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>selenium-screenshot-1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T22:56:25.013002" elapsed="0.120365"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-26T22:56:25.134444" elapsed="2.311150"/>
+</kw>
+<status status="PASS" start="2026-09-26T22:56:20.696851" elapsed="6.749346"/>
+</test>
+<status status="PASS" start="2026-09-26T22:56:20.689709" elapsed="6.757465"/>
+</suite>
+<suite id="s1-s6" name="Ass6" source="D:\Selenium_Lab_Works\ass6.robot">
+<test id="s1-s6-t1" name="Complete Automation Practice" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:27.453324" level="INFO">Opening browser 'Edge' to base url 'https://rahulshettyacademy.com/AutomationPractice/'.</msg>
+<msg time="2026-09-26T22:56:27.943448" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-26T22:56:27.453055" elapsed="4.119491"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-26T22:56:31.573109" elapsed="0.126719"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Practice Page</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-26T22:56:31.701484" elapsed="0.013060"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:31.715251" level="INFO">Typing text 'subhradip' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>subhradip</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:31.714928" elapsed="0.204052"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:31.919617" level="INFO">Selecting 'radio1' from radio button 'radioButton'.</msg>
+<arg>radioButton</arg>
+<arg>radio1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2026-09-26T22:56:31.919408" elapsed="0.107790"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:32.029516" level="INFO">Selecting options from selection list 'id=dropdown-class-example' by value option2.</msg>
+<arg>id=dropdown-class-example</arg>
+<arg>option2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-09-26T22:56:32.029120" elapsed="0.132714"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:32.162800" level="INFO">Selecting checkbox 'id=checkBoxOption1'.</msg>
+<arg>id=checkBoxOption1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:32.162385" elapsed="0.177566"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:32.366530" level="INFO">Element 'id=name' is displayed.</msg>
+<arg>id=name</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-26T22:56:32.340398" elapsed="0.026307"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>id=name</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-09-26T22:56:32.367165" elapsed="0.027897"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:32.395931" level="INFO">Clicking element 'xpath=//input[@value='radio3']'.</msg>
+<arg>xpath=//input[@value='radio3']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-26T22:56:32.395615" elapsed="0.065243"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-09-26T22:56:32.577027" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="assignment_6_final.png"&gt;&lt;img src="assignment_6_final.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>assignment_6_final.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-09-26T22:56:32.461934" elapsed="0.115281"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-09-26T22:56:32.577700" elapsed="2.377475"/>
+</kw>
+<status status="PASS" start="2026-09-26T22:56:27.452287" elapsed="7.503471"/>
+</test>
+<status status="PASS" start="2026-09-26T22:56:27.448462" elapsed="7.508646"/>
+</suite>
+<status status="PASS" start="2026-09-26T22:55:48.954659" elapsed="46.004276"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6" id="s1" pass="6" fail="0" skip="0">Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6</stat>
+<stat name="Ass1" id="s1-s1" pass="1" fail="0" skip="0">Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6.Ass1</stat>
+<stat name="Ass2" id="s1-s2" pass="1" fail="0" skip="0">Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6.Ass2</stat>
+<stat name="Ass3" id="s1-s3" pass="1" fail="0" skip="0">Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6.Ass3</stat>
+<stat name="Ass4" id="s1-s4" pass="1" fail="0" skip="0">Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6.Ass4</stat>
+<stat name="Ass5" id="s1-s5" pass="1" fail="0" skip="0">Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6.Ass5</stat>
+<stat name="Ass6" id="s1-s6" pass="1" fail="0" skip="0">Ass1 &amp; Ass2 &amp; Ass3 &amp; Ass4 &amp; Ass5 &amp; Ass6.Ass6</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-09-26T22:55:49.538175" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<msg time="2026-09-26T22:55:56.466310" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<msg time="2026-09-26T22:56:05.150476" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<msg time="2026-09-26T22:56:12.156632" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<msg time="2026-09-26T22:56:21.044708" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+<msg time="2026-09-26T22:56:27.943448" level="WARN">There was an error managing msedgedriver (error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_153_WINDOWS)); using driver found in the cache</msg>
+</errors>
+</robot>
