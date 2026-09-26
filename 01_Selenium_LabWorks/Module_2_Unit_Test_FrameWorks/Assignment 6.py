@@ -1,7 +1,18 @@
 import pytest
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+
+@pytest.fixture(scope="function")
+def driver():
+    # Initialize Microsoft Edge Driver
+    driver = webdriver.Edge()
+    driver.maximize_window()
+    driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+    yield driver
+    driver.quit()
 
 
 @pytest.mark.smoke
@@ -12,11 +23,12 @@ def test_name_field(driver):
         )
     )
 
-    name_box.send_keys("Harsh")
+    name_box.clear()
+    name_box.send_keys("Subhradip")
 
-    assert name_box.get_attribute("value") == "Harsh"
+    assert name_box.get_attribute("value") == "Subhradip"
 
-    print("Name field test passed")
+    print("Name field test passed for Subhradip")
 
 
 @pytest.mark.smoke
@@ -51,7 +63,7 @@ def test_checkbox(driver):
 
 @pytest.mark.parametrize(
     "name",
-    ["Harsh", "Rahul", "Selenium"]
+    ["Subhradip", "Rahul", "Selenium"]
 )
 def test_multiple_names(driver, name):
     name_box = WebDriverWait(driver, 10).until(
@@ -60,6 +72,7 @@ def test_multiple_names(driver, name):
         )
     )
 
+    name_box.clear()
     name_box.send_keys(name)
 
     assert name_box.get_attribute("value") == name
