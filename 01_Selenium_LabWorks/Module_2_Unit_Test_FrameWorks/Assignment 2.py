@@ -1,4 +1,16 @@
+import pytest
+from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+
+@pytest.fixture(scope="class")
+def driver():
+    # Initialize Microsoft Edge Driver
+    driver = webdriver.Edge()
+    driver.maximize_window()
+    driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+    yield driver
+    driver.quit()
 
 
 class TestSetupTeardown:
@@ -9,11 +21,12 @@ class TestSetupTeardown:
             "name"
         )
 
-        name_box.send_keys("Harsh")
+        name_box.clear()
+        name_box.send_keys("Subhradip")
 
-        assert name_box.get_attribute("value") == "Harsh"
+        assert name_box.get_attribute("value") == "Subhradip"
 
-        print("Name test passed")
+        print("Name test passed for Subhradip")
 
     def test_radio(self, driver):
         radio = driver.find_element(
@@ -30,4 +43,4 @@ class TestSetupTeardown:
     def test_title(self, driver):
         assert driver.title.strip() != ""
 
-        print("Title test passed")
+        print(f"Title test passed: '{driver.title}'")
