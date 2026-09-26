@@ -1,13 +1,13 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library     SeleniumLibrary
 
 *** Variables ***
 ${URL}        https://rahulshettyacademy.com/AutomationPractice/
-${BROWSER}    Chrome
+${BROWSER}    Edge
 
 *** Test Cases ***
 Verify Automation Practice Page
-    Open Browser    ${URL}    ${BROWSER}
+    Open Browser     ${URL}    ${BROWSER}
     Maximize Browser Window
-    Title Should Be    Practice Page
+    Title Should Be  Practice Page
     Close Browser
