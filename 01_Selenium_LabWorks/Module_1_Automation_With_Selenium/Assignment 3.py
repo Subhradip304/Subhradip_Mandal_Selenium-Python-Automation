@@ -3,7 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+# Initialize Microsoft Edge Driver
+driver = webdriver.Edge()
 driver.maximize_window()
 
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
@@ -73,6 +74,6 @@ if len(checkboxes) > 1:
 
     print("6. Second checkbox selected")
 
-print("\nAssignment 3 - Dynamic Dropdowns & Checkboxes PASSED")
+print("\nAssignment 3 - Dynamic Dropdowns & Checkboxes PASSED by Subhradip")
 
 driver.quit()
