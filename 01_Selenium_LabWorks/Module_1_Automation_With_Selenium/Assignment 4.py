@@ -3,7 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+# Initialize Microsoft Edge Driver
+driver = webdriver.Edge()
 driver.maximize_window()
 
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
@@ -17,9 +18,9 @@ name_box = wait.until(
     )
 )
 
-name_box.send_keys("Harsh")
+name_box.send_keys("Subhradip")
 
-print("1. Name entered")
+print("1. Name entered as Subhradip")
 
 # 2. JAVASCRIPT ALERT
 alert_button = wait.until(
@@ -39,13 +40,21 @@ alert = driver.switch_to.alert
 
 print("2. Alert text:", alert.text)
 
-assert "Hello" in alert.text
+assert "Hello Subhradip" in alert.text
 
 alert.accept()
 
 print("3. Alert accepted")
 
 # 3. JAVASCRIPT CONFIRM
+# Re-enter name for confirm box verification
+name_box = wait.until(
+    EC.visibility_of_element_located(
+        (By.ID, "name")
+    )
+)
+name_box.send_keys("Subhradip")
+
 confirm_button = wait.until(
     EC.element_to_be_clickable(
         (By.ID, "confirmbtn")
@@ -63,7 +72,7 @@ confirm = driver.switch_to.alert
 
 print("4. Confirm text:", confirm.text)
 
-assert "Hello" in confirm.text
+assert "Hello Subhradip" in confirm.text
 
 # Accept the confirm
 confirm.accept()
@@ -93,6 +102,6 @@ confirm.dismiss()
 
 print("7. Confirm dismissed")
 
-print("\nAssignment 4 - JavaScript Alerts & Confirms PASSED")
+print("\nAssignment 4 - JavaScript Alerts & Confirms PASSED by Subhradip")
 
 driver.quit()
