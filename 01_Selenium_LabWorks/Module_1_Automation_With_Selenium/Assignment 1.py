@@ -1,7 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome()
+# Initialize Microsoft Edge Driver
+driver = webdriver.Edge()
 driver.maximize_window()
 
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
@@ -12,9 +13,9 @@ name_box = driver.find_element(
     "name"
 )
 
-name_box.send_keys("Harsh")
+name_box.send_keys("Subhradip")
 
-print("1. By.ID: Name entered")
+print("1. By.ID: Name entered as Subhradip")
 
 # 2. BY.XPATH
 radio2 = driver.find_element(
@@ -87,6 +88,6 @@ assert driver.title.strip() != ""
 
 print("9. Page title verified")
 
-print("\nMulti-Locator Challenge PASSED")
+print("\nMulti-Locator Challenge PASSED by Subhradip")
 
 driver.quit()
