@@ -7,7 +7,7 @@
 **Start Date:** 08-Sep-2026  
 **End Date:** 10-Sep-2026  
 
----
+----
 
 ## 2. [Selenium WebDriver with Python](https://www.coursera.org/account/accomplishments/verify/SWVHYGRD159F)
 
@@ -16,7 +16,7 @@
 **Start Date:** 14-Sep-2026  
 **End Date:** 16-Sep-2026  
 
----
+----
 
 ## 3. [Test Automation with Playwright (Python) & Robot Framework](https://www.coursera.org/account/accomplishments/verify/AIIYCPK6P7RE)
 
