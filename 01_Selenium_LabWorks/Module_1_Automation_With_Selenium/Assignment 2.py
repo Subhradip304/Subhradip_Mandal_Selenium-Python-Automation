@@ -3,7 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-driver = webdriver.Chrome()
+# Initialize Microsoft Edge Driver
+driver = webdriver.Edge()
 driver.maximize_window()
 
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
@@ -17,9 +18,9 @@ name_box = wait.until(
     )
 )
 
-name_box.send_keys("Harsh")
+name_box.send_keys("Subhradip")
 
-print("1. Explicit Wait: Name field is visible")
+print("1. Explicit Wait: Name field is visible and entered as Subhradip")
 
 # 2. Wait for Radio2 to become clickable
 radio2 = wait.until(
@@ -57,6 +58,6 @@ assert "rahulshettyacademy.com" in driver.current_url
 
 print("5. URL verification successful")
 
-print("\nAssignment 2 - Synchronization & Explicit Waits PASSED")
+print("\nAssignment 2 - Synchronization & Explicit Waits PASSED by Subhradip")
 
 driver.quit()
