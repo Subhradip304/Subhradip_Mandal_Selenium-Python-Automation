@@ -1,10 +1,21 @@
 import pytest
+from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+
+@pytest.fixture(scope="function")
+def driver():
+    # Initialize Microsoft Edge Driver
+    driver = webdriver.Edge()
+    driver.maximize_window()
+    driver.get("https://rahulshettyacademy.com/AutomationPractice/")
+    yield driver
+    driver.quit()
 
 
 @pytest.mark.parametrize(
     "name",
-    ["Harsh", "Rahul", "Selenium"]
+    ["Subhradip", "Rahul", "Selenium"]
 )
 def test_enter_multiple_names(driver, name):
 
@@ -13,8 +24,9 @@ def test_enter_multiple_names(driver, name):
         "name"
     )
 
+    name_box.clear()
     name_box.send_keys(name)
 
     assert name_box.get_attribute("value") == name
 
-    print("Name entered:", name)
+    print(f"Name entered successfully: {name}")
