@@ -1,0 +1,10 @@
+{
+  "base_url": "https://tutorialsninja.com/demo/",
+  "product": "iPhone",
+  "quantity": 2,
+  "currency": "$",
+  "account": {
+    "email": "demo@gmail.com",
+    "password": "demo-password"
+  }
+}
