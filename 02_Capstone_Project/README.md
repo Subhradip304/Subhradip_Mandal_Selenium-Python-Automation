@@ -1,6 +1,9 @@
 ## Capstone Assignment1:  VIDEO LINK
 https://drive.google.com/file/d/1TSpuPaq-OPcgSSoUPeEzL8aja_husww_/view?usp=drive_link
 
+## If this Capstone Not work for some kind of Problem I am pasting this Project REPOSATORY link here
+https://github.com/Subhradip304/Wipro_Capstone_Assignment1
+
 
 
 
