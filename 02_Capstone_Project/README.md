@@ -2,7 +2,7 @@
 ## Prerequisites
 
 - Python 3.10+
-- Google Chrome (ChromeDriver is managed automatically by Selenium Manager)
+- Edge (EdgeDriver is managed automatically by Selenium Manager)
 - A valid TutorialsNinja demo-store account. Create one via **My Account > Register** if needed.
 
 ## Setup
