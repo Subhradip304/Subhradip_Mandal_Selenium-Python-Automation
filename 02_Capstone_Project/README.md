@@ -1,6 +1,3 @@
-# Selenium WebDriver E-Commerce Automation
-
-An end-to-end Python/Selenium project for purchasing a product on the [TutorialsNinja demo store](https://tutorialsninja.com/demo/). It covers login, product search, cart updates and verification, screenshots, alert handling, Excel/JSON test data, and an HTML execution report.
 
 ## Prerequisites
 
@@ -46,6 +43,3 @@ utils/       configuration, Excel/JSON readers, screenshots, alert helper
 data/        JSON seed and generated Excel test data
 ```
 
-## Notes
-
-The demo site is public and can be reset or temporarily unavailable. Credentials are intentionally not committed. The test verifies the cart item name, unit price, line total calculation, and requested quantity before it ends; it does not place an irreversible order.
